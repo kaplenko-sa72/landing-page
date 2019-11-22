@@ -14,8 +14,6 @@ import Home from '../components/home';
 import DummyView from '../components/dummy-view';
 import NotFound from '../components/404';
 import Landing from '../components/landing';
-import Blog from '../components/blog';
-import Gallery from '../components/gallery';
 
 import Startup from './startup';
 
@@ -88,11 +86,9 @@ export default (props) => {
         <StartupConnected>
           <Switch>
             <Route exact path="/" component={() => <Landing />} />
-            <Route exact path="/dashboard" component={() => <Home />} />
-            <Route exact path="/salo/*" component={() => <Home />} />
-            <Route exact path="/dummy/*" component={() => <DummyView />} />
-            <Route exact path="/blog/*" component={() => <Blog />} />
-            <Route exact path="/gallery/*" component={() => <Gallery />} />
+            <Route path="/dashboard" component={() => <Home />} />
+            <Route path="/salo/*" component={() => <Home />} />
+            <Route path="/dummy/*" component={() => <DummyView />} />
 
             <PrivateRouteConnected exact path="/hidden-route" component={() => <DummyView />} />
             <Route component={() => <NotFound />} />

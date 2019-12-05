@@ -14,6 +14,9 @@ import Home from '../components/home';
 import DummyView from '../components/dummy-view';
 import NotFound from '../components/404';
 import Landing from '../components/landing';
+import Blog from '../components/blog';
+import Gallery from '../components/gallery';
+import Price from '../components/price';
 
 import Startup from './startup';
 
@@ -24,7 +27,6 @@ const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
     : <Component {...props} />)
   return (<Route {...rest} render={func} />)
 }
-
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const func = (props) => (!!rest.user && !!rest.user.name && !!rest.token
     ? <Component {...props} />
@@ -89,6 +91,9 @@ export default (props) => {
             <Route path="/dashboard" component={() => <Home />} />
             <Route path="/salo/*" component={() => <Home />} />
             <Route path="/dummy/*" component={() => <DummyView />} />
+            <Route path="/blog" component={() => <Blog />} />
+            <Route path="/gallery" component={() => <Gallery />} />
+            <Route path="/price" component={() => <Price />} />
 
             <PrivateRouteConnected exact path="/hidden-route" component={() => <DummyView />} />
             <Route component={() => <NotFound />} />

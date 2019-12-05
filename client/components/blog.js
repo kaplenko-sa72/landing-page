@@ -3,7 +3,7 @@ import React, {} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 
-const Dummy = () => {
+const Blog = () => {
   return (
     <div>
       <header className="header_area">
@@ -18,13 +18,13 @@ const Dummy = () => {
               </button>
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav justify-content-center">
-                  <li className="nav-item"><a className="nav-link" href="index.html">Home</a></li>
+                  <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                   <li className="nav-item"><a className="nav-link" href="about-us.html">About</a></li>
-                  <li className="nav-item"><a className="nav-link" href="gallery.html">Gallery</a></li>
+                  <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
                   <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"><a className="nav-link" href="price.html">Pricing</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/price">Pricing</a></li>
                       <li className="nav-item"><a className="nav-link" href="games.html">Games</a></li>
                       <li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
                     </ul>
@@ -32,8 +32,8 @@ const Dummy = () => {
                   <li className="nav-item submenu dropdown active">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"><a className="nav-link" href="blog.html">Blog</a></li>
-                      <li className="nav-item"><a className="nav-link" href="single-blog.html">Blog Details</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/blog">Blog</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/single-blog">Blog Details</a></li>
                     </ul>
                   </li>
                   <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
@@ -90,7 +90,7 @@ const Dummy = () => {
                 <img src="images/blog/cat-post/cat-post-3.jpg" alt="post" />
                 <div className="categories_details">
                   <div className="categories_text">
-                    <a href="single-blog.html"><h5>Social Life</h5></a>
+                    <a href="single-blog.js"><h5>Social Life</h5></a>
                     <div className="border_line" />
                     <p>Enjoy your social life together</p>
                   </div>
@@ -102,7 +102,7 @@ const Dummy = () => {
                 <img src="images/blog/cat-post/cat-post-2.jpg" alt="post" />
                 <div className="categories_details">
                   <div className="categories_text">
-                    <a href="single-blog.html"><h5>Politics</h5></a>
+                    <a href="single-blog.js"><h5>Politics</h5></a>
                     <div className="border_line" />
                     <p>Be a part of politics</p>
                   </div>
@@ -114,7 +114,7 @@ const Dummy = () => {
                 <img src="images/blog/cat-post/cat-post-1.jpg" alt="post" />
                 <div className="categories_details">
                   <div className="categories_text">
-                    <a href="single-blog.html"><h5>Food</h5></a>
+                    <a href="single-blog.js"><h5>Food</h5></a>
                     <div className="border_line" />
                     <p>Let the food be finished</p>
                   </div>
@@ -151,11 +151,11 @@ const Dummy = () => {
                     <div className="blog_post">
                       <img src="images/blog/main-blog/m-blog-1.jpg" alt="" />
                       <div className="blog_details">
-                        <a href="single-blog.html"><h2>Astronomy Binoculars A Great Alternative</h2></a>
+                        <a href="single-blog.js"><h2>Astronomy Binoculars A Great Alternative</h2></a>
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have
                           to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
                         </p>
-                        <a href="single-blog.html" className="blog_btn">View More</a>
+                        <a href="single-blog.js" className="blog_btn">View More</a>
                       </div>
                     </div>
                   </div>
@@ -181,11 +181,11 @@ const Dummy = () => {
                     <div className="blog_post">
                       <img src="images/blog/main-blog/m-blog-2.jpg" alt="" />
                       <div className="blog_details">
-                        <a href="single-blog.html"><h2>The Basics Of Buying A Telescope</h2></a>
+                        <a href="single-blog.js"><h2>The Basics Of Buying A Telescope</h2></a>
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have
                            to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
                         </p>
-                        <a href="single-blog.html" className="blog_btn">View More</a>
+                        <a href="single-blog.js" className="blog_btn">View More</a>
                       </div>
                     </div>
                   </div>
@@ -211,11 +211,11 @@ const Dummy = () => {
                     <div className="blog_post">
                       <img src="images/blog/main-blog/m-blog-3.jpg" alt="" />
                       <div className="blog_details">
-                        <a href="single-blog.html"><h2>The Glossary Of Telescopes</h2></a>
+                        <a href="single-blog.js"><h2>The Glossary Of Telescopes</h2></a>
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have
                            to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
                         </p>
-                        <a href="single-blog.html" className="blog_btn">View More</a>
+                        <a href="single-blog.js" className="blog_btn">View More</a>
                       </div>
                     </div>
                   </div>
@@ -241,11 +241,11 @@ const Dummy = () => {
                     <div className="blog_post">
                       <img src="images/blog/main-blog/m-blog-4.jpg" alt="" />
                       <div className="blog_details">
-                        <a href="single-blog.html"><h2>The Night Sky</h2></a>
+                        <a href="single-blog.js"><h2>The Night Sky</h2></a>
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have
                            to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
                         </p>
-                        <a href="single-blog.html" className="blog_btn">View More</a>
+                        <a href="single-blog.js" className="blog_btn">View More</a>
                       </div>
                     </div>
                   </div>
@@ -271,11 +271,11 @@ const Dummy = () => {
                     <div className="blog_post">
                       <img src="images/blog/main-blog/m-blog-5.jpg" alt="" />
                       <div className="blog_details">
-                        <a href="single-blog.html"><h2>Telescopes 101</h2></a>
+                        <a href="single-blog.js"><h2>Telescopes 101</h2></a>
                         <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have
                            to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
                         </p>
-                        <a href="single-blog.html" className="blog_btn">View More</a>
+                        <a href="single-blog.js" className="blog_btn">View More</a>
                       </div>
                     </div>
                   </div>
@@ -552,10 +552,10 @@ const Dummy = () => {
   )
 }
 
-Dummy.propTypes = {}
+Blog.propTypes = {}
 
 const mapStateToProps = () => ({})
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dummy)
+export default connect(mapStateToProps, mapDispatchToProps)(Blog)

@@ -3,14 +3,14 @@ import React, {} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 
-const Dummy = () => {
+const Price = () => {
   return (
     <div>
       <header className="header_area">
         <div className="main_menu">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
-              <a className="navbar-brand logo_h" href="index.html"> <img src="images/logo.png" alt="" /></a>
+              <a className="navbar-brand logo_h" href="/"><img src="img/logo.png" alt="" /> </a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="icon-bar" />
                 <span className="icon-bar" />
@@ -20,26 +20,26 @@ const Dummy = () => {
                 <ul className="nav navbar-nav menu_nav justify-content-center">
                   <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
                   <li className="nav-item"><a className="nav-link" href="about-us.html">About</a></li>
-                  <li className="nav-item active"><a className="nav-link" href="/gallery">Gallery</a></li>
-                  <li className="nav-item submenu dropdown">
+                  <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
+                  <li className="nav-item submenu dropdown active">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"> <a className="nav-link" href="/price">Pricing</a></li>
-                      <li className="nav-item"> <a className="nav-link" href="games.html">Games</a></li>
-                      <li className="nav-item"> <a className="nav-link" href="elements.html">Elements</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/price">Pricing</a></li>
+                      <li className="nav-item"><a className="nav-link" href="games.html">Games</a></li>
+                      <li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
                     </ul>
                   </li>
                   <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"> <a className="nav-link" href="/blog">Blog</a></li>
-                      <li className="nav-item"> <a className="nav-link" href="/single-blog">Blog Details</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/blog">Blog</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/single-blog">Blog Details</a></li>
                     </ul>
                   </li>
-                  <li className="nav-item"> <a className="nav-link" href="contact.html">Contact</a></li>
+                  <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <ul className="nav navbar-nav navbar-right">
-                  <li className="nav-item"> <a href="#" className="primary_btn">join us</a></li>
+                  <li className="nav-item"><a href="#" className="primary_btn">join us</a></li>
                 </ul>
               </div>
             </div>
@@ -52,72 +52,96 @@ const Dummy = () => {
           <div className="container">
             <div className="banner_content text-center">
               <div className="page_link">
-                <a href="index.html">Home</a>
-                <a href="gallery.html">Gallery</a>
+                <a href="/">Home</a>
+                <a href="/price">Pricing</a>
               </div>
-              <h2>Screen Shot Gallery</h2>
+              <h2>Pricing Plans</h2>
             </div>
           </div>
         </div>
       </section>
-      <section className="gallery_area">
+      <section className="pricing_area section_gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="main_title">
-                <h2>Screens Gallery</h2>
-                <h1>Screens Gallery</h1>
+                <h2>Pricing Plans</h2>
+                <h1>Pricing Plans</h1>
               </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-8">
-              <div className="row">
-                <div className="col-lg-6 col-md-6">
-                  <div className="single-gallery">
-                    <div className="overlay" />
-                    <img className="img-fluid w-100" src="images/gallery_img1.png" alt="" />
-                    <div className="content">
-                      <a className="pop-up-image" href="img/gallery_img1.png">
-                        <i className="lnr lnr-eye" />
-                      </a>
-                    </div>
-                  </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="pricing_item">
+                <h3 className="p_title">Silver Package</h3>
+                <h1 className="p_price">$69.00</h1>
+                <div className="p_list">
+                  <ul>
+                    <li>Basic hair Cut</li>
+                    <li>Basic hair Cut</li>
+                    <li>Basic hair Cut</li>
+                  </ul>
                 </div>
-                <div className="col-lg-6 col-md-6">
-                  <div className="single-gallery">
-                    <div className="overlay" />
-                    <img className="img-fluid w-100" src="images/gallery_img2.png" alt="" />
-                    <div className="content">
-                      <a className="pop-up-image" href="img/gallery_img2.png">
-                        <i className="lnr lnr-eye" />
-                      </a>
-                    </div>
-                  </div>
+                <div className="p_btn">
+                  <a className="gradient_btn" href="#"><span>Order Now</span></a>
                 </div>
-                <div className="col-lg-12">
-                  <div className="single-gallery">
-                    <div className="overlay" />
-                    <img className="img-fluid w-100" src="images/gallery_img3.png" alt="" />
-                    <div className="content">
-                      <a className="pop-up-image" href="img/gallery_img3.png">
-                        <i className="lnr lnr-eye" />
-                      </a>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="pricing_item active">
+                <h3 className="p_title">Golden Package</h3>
+                <h1 className="p_price">$69.00</h1>
+                <div className="p_list">
+                  <ul>
+                    <li>Basic hair Cut</li>
+                    <li>Basic hair Cut</li>
+                    <li>Basic hair Cut</li>
+                  </ul>
+                </div>
+                <div className="p_btn">
+                  <a className="gradient_btn" href="#"><span>Order Now</span></a>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 hidden-md">
-              <div className="single-gallery">
-                <div className="overlay" />
-                <img className="img-fluid w-100" src="images/gallery_img4.png" alt="" />
-                <div className="content">
-                  <a className="pop-up-image" href="img/gallery_img4.png">
-                    <i className="lnr lnr-eye" />
-                  </a>
+              <div className="pricing_item">
+                <h3 className="p_title">Platinum Package</h3>
+                <h1 className="p_price">$69.00</h1>
+                <div className="p_list">
+                  <ul>
+                    <li>Basic hair Cut</li>
+                    <li>Basic hair Cut</li>
+                    <li>Basic hair Cut</li>
+                  </ul>
+                </div>
+                <div className="p_btn">
+                  <a className="gradient_btn" href="#"><span>Order Now</span></a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="newsletter_area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="newsletter_inner">
+                <h1>Subscribe Our Newsletter</h1>
+                <p>We won’t send any kind of spam</p>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <aside className="newsletter_widget">
+                <div id="mc_embed_signup">
+                  <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" className="subscribe_form relative">
+                    <div className="input-group d-flex flex-row">
+                      <input name="EMAIL" placeholder="Enter email address" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Your email address'" required="" type="email" />
+                      <button type="button" className="btn primary_btn">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </aside>
             </div>
           </div>
         </div>
@@ -184,15 +208,17 @@ const Dummy = () => {
           <div className="row single-footer-widget">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="copy_right_text">
-                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="blank">Colorlib</a></p>
+                <p>
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="blank">Colorlib</a>
+                </p>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="social_widget">
-                <a href="#"> <i className="fa fa-facebook" /></a>
-                <a href="#"> <i className="fa fa-twitter" /></a>
-                <a href="#"> <i className="fa fa-dribbble" /></a>
-                <a href="#"> <i className="fa fa-behance" /></a>
+                <a href="#"><i className="fa fa-facebook" /> </a>
+                <a href="#"><i className="fa fa-twitter" /> </a>
+                <a href="#"><i className="fa fa-dribbble" /> </a>
+                <a href="#"><i className="fa fa-behance" /> </a>
               </div>
             </div>
           </div>
@@ -218,10 +244,10 @@ const Dummy = () => {
   )
 }
 
-Dummy.propTypes = {}
+Price.propTypes = {}
 
 const mapStateToProps = () => ({})
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dummy)
+export default connect(mapStateToProps, mapDispatchToProps)(Price)

@@ -1,4 +1,5 @@
 import React, {} from 'react';
+import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
@@ -10,7 +11,7 @@ const Dummy = () => {
         <div className="main_menu">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
-              <a className="navbar-brand logo_h" href="index.html"> <img src="images/logo.png" alt="" /></a>
+              <a className="navbar-brand logo_h" href="/"> <img src="images/logo.png" alt="" /></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="icon-bar" />
                 <span className="icon-bar" />
@@ -18,22 +19,22 @@ const Dummy = () => {
               </button>
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav justify-content-center">
-                  <li className="nav-item active"><a className="nav-link" href="index.html">Home</a></li>
+                  <li className="nav-item active"><a className="nav-link" href="/">Home</a></li>
                   <li className="nav-item"><a className="nav-link" href="about-us.html">About</a></li>
-                  <li className="nav-item"><a className="nav-link" href="gallery.html">Gallery</a></li>
+                  <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
                   <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item" /><a className="nav-link" href="price.html">Pricing</a>
+                      <li className="nav-item" /><a className="nav-link" href="/price">Pricing</a>
                       <li className="nav-item" /><a className="nav-link" href="games.html">Games</a>
                       <li className="nav-item" /><a className="nav-link" href="elements.html">Elements</a>
                     </ul>
                   </li>
                   <li className="nav-item submenu dropdown">
-                    <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <Link to="/blog" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</Link>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"><a className="nav-link" href="blog.html">Blog</a></li>
-                      <li className="nav-item"><a className="nav-link" href="single-blog.html">Blog Details</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/blog">Blog</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/single-blog">Blog Details</a></li>
                     </ul>
                   </li>
                   <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
@@ -480,7 +481,7 @@ const Dummy = () => {
                   <img className="img-fluid" src="images/blog_img1.png" alt="" />
                 </div>
                 <div className="blog_content">
-                  <a className="title" href="blog.html">Portable Fashion for women</a>
+                  <a className="title" href="/blog">Portable Fashion for women</a>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                   <div className="date">
                     <a href="#"><i className="fa fa-calendar" aria-hidden="true" />13th Dec </a>
@@ -496,7 +497,7 @@ const Dummy = () => {
                   <img className="img-fluid" src="images/blog_img2.png" alt="" />
                 </div>
                 <div className="blog_content">
-                  <a className="title" href="blog.html">Portable Fashion for women</a>
+                  <a className="title" href="/blog">Portable Fashion for women</a>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                   <div className="date">
                     <a href="#"><i className="fa fa-calendar" aria-hidden="true" />13th Dec </a>
@@ -512,7 +513,7 @@ const Dummy = () => {
                   <img className="img-fluid" src="images/blog_img3.png" alt="" />
                 </div>
                 <div className="blog_content">
-                  <a className="title" href="blog.html">Portable Fashion for women</a>
+                  <a className="title" href="/blog">Portable Fashion for women</a>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                   <div className="date">
                     <a href="#"><i className="fa fa-calendar" aria-hidden="true" />13th Dec </a>

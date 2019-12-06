@@ -10,7 +10,7 @@ const Dummy = () => {
         <div className="main_menu">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
-              <a className="navbar-brand logo_h" href="index.html"> <img src="images/logo.png" alt="" /></a>
+              <a className="navbar-brand logo_h" href="/"> <img src="images/logo.png" alt="" /></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="icon-bar" />
                 <span className="icon-bar" />
@@ -19,13 +19,13 @@ const Dummy = () => {
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav justify-content-center">
                   <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                  <li className="nav-item"><a className="nav-link" href="about-us.html">About</a></li>
+                  <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
                   <li className="nav-item active"><a className="nav-link" href="/gallery">Gallery</a></li>
                   <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
                       <li className="nav-item"> <a className="nav-link" href="/price">Pricing</a></li>
-                      <li className="nav-item"> <a className="nav-link" href="games.html">Games</a></li>
+                      <li className="nav-item"> <a className="nav-link" href="/games">Games</a></li>
                       <li className="nav-item"> <a className="nav-link" href="elements.html">Elements</a></li>
                     </ul>
                   </li>
@@ -52,7 +52,7 @@ const Dummy = () => {
           <div className="container">
             <div className="banner_content text-center">
               <div className="page_link">
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
                 <a href="gallery.html">Gallery</a>
               </div>
               <h2>Screen Shot Gallery</h2>
@@ -78,7 +78,7 @@ const Dummy = () => {
                     <div className="overlay" />
                     <img className="img-fluid w-100" src="images/gallery_img1.png" alt="" />
                     <div className="content">
-                      <a className="pop-up-image" href="img/gallery_img1.png">
+                      <a className="pop-up-image" href="images/gallery_img1.png">
                         <i className="lnr lnr-eye" />
                       </a>
                     </div>
@@ -89,7 +89,7 @@ const Dummy = () => {
                     <div className="overlay" />
                     <img className="img-fluid w-100" src="images/gallery_img2.png" alt="" />
                     <div className="content">
-                      <a className="pop-up-image" href="img/gallery_img2.png">
+                      <a className="pop-up-image" href="images/gallery_img2.png">
                         <i className="lnr lnr-eye" />
                       </a>
                     </div>
@@ -100,7 +100,7 @@ const Dummy = () => {
                     <div className="overlay" />
                     <img className="img-fluid w-100" src="images/gallery_img3.png" alt="" />
                     <div className="content">
-                      <a className="pop-up-image" href="img/gallery_img3.png">
+                      <a className="pop-up-image" href="images/gallery_img3.png">
                         <i className="lnr lnr-eye" />
                       </a>
                     </div>
@@ -113,7 +113,7 @@ const Dummy = () => {
                 <div className="overlay" />
                 <img className="img-fluid w-100" src="images/gallery_img4.png" alt="" />
                 <div className="content">
-                  <a className="pop-up-image" href="img/gallery_img4.png">
+                  <a className="pop-up-image" href="images/gallery_img4.png">
                     <i className="lnr lnr-eye" />
                   </a>
                 </div>

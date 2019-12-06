@@ -20,13 +20,13 @@ const Dummy = () => {
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav justify-content-center">
                   <li className="nav-item active"><a className="nav-link" href="/">Home</a></li>
-                  <li className="nav-item"><a className="nav-link" href="about-us.html">About</a></li>
+                  <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
                   <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
                   <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
                       <li className="nav-item" /><a className="nav-link" href="/price">Pricing</a>
-                      <li className="nav-item" /><a className="nav-link" href="games.html">Games</a>
+                      <li className="nav-item" /><a className="nav-link" href="/games">Games</a>
                       <li className="nav-item" /><a className="nav-link" href="elements.html">Elements</a>
                     </ul>
                   </li>

@@ -17,6 +17,8 @@ import Landing from '../components/landing';
 import Blog from '../components/blog';
 import Gallery from '../components/gallery';
 import Price from '../components/price';
+import About from '../components/about';
+import Games from '../components/games';
 
 import Startup from './startup';
 
@@ -94,6 +96,8 @@ export default (props) => {
             <Route path="/blog" component={() => <Blog />} />
             <Route path="/gallery" component={() => <Gallery />} />
             <Route path="/price" component={() => <Price />} />
+            <Route path="/about" component={() => <About />} />
+            <Route path="/games" component={() => <Games />} />
 
             <PrivateRouteConnected exact path="/hidden-route" component={() => <DummyView />} />
             <Route component={() => <NotFound />} />

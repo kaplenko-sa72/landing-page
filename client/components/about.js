@@ -36,7 +36,7 @@ const About = () => {
                       <li className="nav-item"><a className="nav-link" href="/single-blog">Blog Details</a></li>
                     </ul>
                   </li>
-                  <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
+                  <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
                 </ul>
                 <ul className="nav navbar-nav navbar-right">
                   <li className="nav-item"><a href="#" className="primary_btn">join us</a></li>

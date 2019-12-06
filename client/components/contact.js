@@ -3,7 +3,7 @@ import React, {} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 
-const Price = () => {
+const Contact = () => {
   return (
     <div>
       <header className="header_area">
@@ -18,15 +18,15 @@ const Price = () => {
               </button>
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav justify-content-center">
-                  <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                  <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
-                  <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
-                  <li className="nav-item submenu dropdown active">
+                  <li className="nav-item"><a className="nav-link" href="/">Home</a> </li>
+                  <li className="nav-item"><a className="nav-link" href="/about">About</a> </li>
+                  <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a> </li>
+                  <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"><a className="nav-link" href="/price">Pricing</a></li>
-                      <li className="nav-item"><a className="nav-link" href="/games">Games</a></li>
-                      <li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/price">Pricing</a> </li>
+                      <li className="nav-item"><a className="nav-link" href="/games">Games</a> </li>
+                      <li className="nav-item"><a className="nav-link" href="elements.html">Elements</a> </li>
                     </ul>
                   </li>
                   <li className="nav-item submenu dropdown">
@@ -36,7 +36,7 @@ const Price = () => {
                       <li className="nav-item"><a className="nav-link" href="/single-blog">Blog Details</a></li>
                     </ul>
                   </li>
-                  <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
+                  <li className="nav-item active"><a className="nav-link" href="/contact">Contact</a></li>
                 </ul>
                 <ul className="nav navbar-nav navbar-right">
                   <li className="nav-item"><a href="#" className="primary_btn">join us</a></li>
@@ -53,95 +53,67 @@ const Price = () => {
             <div className="banner_content text-center">
               <div className="page_link">
                 <a href="/">Home</a>
-                <a href="/price">Pricing</a>
+                <a href="/contact">CONTACT</a>
               </div>
-              <h2>Pricing Plans</h2>
+              <h2>CONTACT US</h2>
             </div>
           </div>
         </div>
       </section>
-      <section className="pricing_area section_gap">
+      <section className="contact_area section_gap">
         <div className="container">
+          <div
+            id="mapBox"
+            className="mapBox"
+            data-lat="40.701083"
+            data-lon="-74.1522848"
+            data-zoom="13"
+            data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+            data-mlat="40.701083"
+            data-mlon="-74.1522848"
+          />
           <div className="row">
-            <div className="col-lg-12">
-              <div className="main_title">
-                <h2>Pricing Plans</h2>
-                <h1>Pricing Plans</h1>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="pricing_item">
-                <h3 className="p_title">Silver Package</h3>
-                <h1 className="p_price">$69.00</h1>
-                <div className="p_list">
-                  <ul>
-                    <li>Basic hair Cut</li>
-                    <li>Basic hair Cut</li>
-                    <li>Basic hair Cut</li>
-                  </ul>
+            <div className="col-lg-3">
+              <div className="contact_info">
+                <div className="info_item">
+                  <i className="lnr lnr-home" />
+                  <h6>California, United States</h6>
+                  <p>Santa monica bullevard</p>
                 </div>
-                <div className="p_btn">
-                  <a className="gradient_btn" href="#"><span>Order Now</span></a>
+                <div className="info_item">
+                  <i className="lnr lnr-phone-handset" />
+                  <h6><a href="#">00 (440) 9865 562</a></h6>
+                  <p>Mon to Fri 9am to 6 pm</p>
+                </div>
+                <div className="info_item">
+                  <i className="lnr lnr-envelope" />
+                  <h6><a href="#">support@colorlib.com</a></h6>
+                  <p>Send us your query anytime!</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="pricing_item active">
-                <h3 className="p_title">Golden Package</h3>
-                <h1 className="p_price">$69.00</h1>
-                <div className="p_list">
-                  <ul>
-                    <li>Basic hair Cut</li>
-                    <li>Basic hair Cut</li>
-                    <li>Basic hair Cut</li>
-                  </ul>
+            <div className="col-lg-9">
+              <form className="row contact_form" action="contact_process.php" method="post" id="contactForm" noValidate="novalidate">
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <input type="text" className="form-control" id="name" name="name" placeholder="Enter your name" />
+                  </div>
+                  <div className="form-group">
+                    <input type="email" className="form-control" id="email" name="email" placeholder="Enter email address" />
+                  </div>
+                  <div className="form-group">
+                    <input type="text" className="form-control" id="subject" name="subject" placeholder="Enter Subject" />
+                  </div>
                 </div>
-                <div className="p_btn">
-                  <a className="gradient_btn" href="#"><span>Order Now</span></a>
+                <div className="col-md-6">
+                  <div className="form-group">
+                    <textarea className="form-control" name="message" id="message" rows="1" placeholder="Enter Message" />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 hidden-md">
-              <div className="pricing_item">
-                <h3 className="p_title">Platinum Package</h3>
-                <h1 className="p_price">$69.00</h1>
-                <div className="p_list">
-                  <ul>
-                    <li>Basic hair Cut</li>
-                    <li>Basic hair Cut</li>
-                    <li>Basic hair Cut</li>
-                  </ul>
+                <div className="col-md-12 text-right">
+                  <button type="submit" value="submit" className="primary_btn">Send Message</button>
                 </div>
-                <div className="p_btn">
-                  <a className="gradient_btn" href="#"><span>Order Now</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="newsletter_area">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="newsletter_inner">
-                <h1>Subscribe Our Newsletter</h1>
-                <p>We won’t send any kind of spam</p>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <aside className="newsletter_widget">
-                <div id="mc_embed_signup">
-                  <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" className="subscribe_form relative">
-                    <div className="input-group d-flex flex-row">
-                      <input name="EMAIL" placeholder="Enter email address" onFocus="this.placeholder = ''" onBlur="this.placeholder = 'Your email address'" required="" type="email" />
-                      <button type="button" className="btn primary_btn">Subscribe</button>
-                    </div>
-                  </form>
-                </div>
-              </aside>
+              </form>
             </div>
           </div>
         </div>
@@ -224,19 +196,49 @@ const Price = () => {
           </div>
         </div>
       </footer>
+      <div id="success" className="modal modal-message fade" role="dialog">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <i className="fa fa-close" />
+              </button>
+              <h2>Thank you</h2>
+              <p>Your message is successfully sent...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="error" className="modal modal-message fade" role="dialog">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                <i className="fa fa-close" />
+              </button>
+              <h2>Sorry !</h2>
+              <p> Something went wrong </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="js/jquery-3.2.1.min.js" />
       <script src="js/popper.js" />
       <script src="js/bootstrap.min.js" />
       <script src="js/stellar.js" />
+      <script src="js/jquery.magnific-popup.min.js" />
       <script src="js/jquery.magnific-popup.min.js" />
       <script src="vendors/nice-select/js/jquery.nice-select.min.js" />
       <script src="vendors/isotope/imagesloaded.pkgd.min.js" />
       <script src="vendors/isotope/isotope-min.js" />
       <script src="vendors/owl-carousel/owl.carousel.min.js" />
       <script src="js/jquery.ajaxchimp.min.js" />
+      <script src="js/mail-script.js" />
       <script src="vendors/counter-up/jquery.waypoints.min.js" />
       <script src="vendors/counter-up/jquery.counterup.min.js" />
-      <script src="js/mail-script.js" />
+      <script src="js/jquery.form.js" />
+      <script src="js/jquery.validate.min.js" />
+      <script src="js/contact.js" />
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE" />
       <script src="js/gmaps.min.js" />
       <script src="js/theme.js" />
@@ -244,10 +246,10 @@ const Price = () => {
   )
 }
 
-Price.propTypes = {}
+Contact.propTypes = {}
 
 const mapStateToProps = () => ({})
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({}, dispatch)
 
-export default connect(mapStateToProps, mapDispatchToProps)(Price)
+export default connect(mapStateToProps, mapDispatchToProps)(Contact)

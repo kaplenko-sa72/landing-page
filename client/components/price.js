@@ -33,7 +33,7 @@ const Price = () => {
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                     <ul className="dropdown-menu">
                       <li className="nav-item"><a className="nav-link" href="/blog">Blog</a></li>
-                      <li className="nav-item"><a className="nav-link" href="/single-blog">Blog Details</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/single">Blog Details</a></li>
                     </ul>
                   </li>
                   <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
